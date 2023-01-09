@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Portal</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <h1 class="main-heading">Payment Form</h1>
+            <hr>
+            <h2>User Information</h2>
+            <p>Name:*
+                <input type="text" required name="name" placeholder="Akshat Gupta">
+            </p>
+            <p>
+                <feildset>
+                    <legend>Gender:</legend>
+                    Male <input type="radio" name="gender" id="male" value="M" required> Female<input type="radio" name="gender" id="female" value="F" required>
+                </feildset>
+            </p>
+            <p>Address:
+                <textarea name="address" rows="8" cols="100" id="address" placeholder="Enter your address"></textarea>
+            </p>
+            <p>Email:
+                <input type="email" required name="name" placeholder="abc@xyz">
+            </p>
+            <p>Pin Code:
+                <input type="number" required name="name" placeholder="788931">
+            </p>
+            <h2>Payment Information</h2>
+            <p> Card Type:
+                <select name="card_type" id="card_type" required>
+                    <option value="">---Select Card Type---</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Master Card">Master Card</option>
+                    <option value="Rupay">Rupay</option>
+                </select>
+            </p>
+            <p>Card Number*:
+               <input type="text" required name=""name" placeholder="1111-2222-3333-4444">
+            </p>
+            <p>Expiration Date:
+                <input type="date" data-date-inline-picker="true" />
+             </p>
+            <p>Cvv*:
+                <input type="text" required name="Cvv" placeholder="123">
+             </p>
+             <button class="button" type="button" name="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
